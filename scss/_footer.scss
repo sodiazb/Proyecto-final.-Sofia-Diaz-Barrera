@@ -1,0 +1,55 @@
+footer{
+    background-color: $secondaryColor; 
+}       
+    .pie {
+        justify-content: center;
+        margin: 20px 40px;
+        display: flex;
+        flex-direction: row;  
+        .pie1{
+        margin-top: 40px;
+        margin-right: 50px;
+        margin-left: 50px;
+          .iconos{
+           width: 30px;
+           margin: 15px;
+           align-items: center;
+           }
+          .txtb{
+            width: 100%;
+            height: 40px;
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            position: relative;
+            border: 0;
+                input{
+                width: 100%;
+                height: 40px;
+                background-color: #FFFFFF;
+                border-radius: 20px;
+                border: 0;
+                position: relative;
+                padding: 0px 20px;
+                outline: none;
+                font-size: 1.5rem;
+               }   
+               .boton2 {
+                text-decoration: none;
+                border: 0px;
+                width: 30%;
+                height:30px;
+                border-radius: 20px;
+                background-color:$mainColor;  
+                color: $keyColor;
+                font-size: 1.3rem; 
+                position: absolute;
+                right: 7px;
+                top: 4px;
+                }
+            }
+        }
+    }
+
+.copyright{
+        padding-bottom: 30px;
+}

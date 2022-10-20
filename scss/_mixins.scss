@@ -1,0 +1,51 @@
+@mixin texto ($fontsize, $interlineado, $color, $margin){
+      font-size: $fontsize;
+      line-height: $interlineado;
+      color: $color;
+      margin: $margin;
+}
+
+@mixin encabezado ($bg-color, $height, $margin){
+    background-color: $bg-color;
+    height: $height;
+    margin: $margin;
+}
+
+@mixin flex ($direction, $margin, $interlineado){
+    display: flex;
+    flex-direction: $direction;
+    margin: $margin;
+    list-style: $interlineado;
+}
+
+@mixin media($breakpoint){
+    @if $breakpoint == mobile{
+        @media (max-width: 360px){
+           @content; 
+        }
+    }
+}
+
+// maps
+$margin:(
+    'uno': 10px,
+    'dos': 20px,
+    'tres': 30px,
+    'cuatro':40px,
+    'cinco': 50px,
+);
+
+.margin2{
+     margin: map-get($map:$margin, $key:'dos');
+}
+
+$paleta:(
+    'uno': rgb(25, 127, 171),
+    'dos': rgb(18, 12, 68),
+    'tres': #FFFFFF,
+    'cuatro':#000000,
+);
+
+.bg-blue{
+    background-color: map-get($map:$paleta, $key:'uno');
+}

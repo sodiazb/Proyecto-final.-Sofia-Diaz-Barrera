@@ -1,0 +1,17 @@
+#botonera{
+    background-color:$keyColor;
+    box-shadow: $boxShadow;
+    ul{
+         li{
+             a{ 
+                color: black;
+                font-size: $textSm;
+                margin: 0 15px;
+                &:hover{
+                color: $mainColor;
+                font-weight: $textBold;
+                }
+              }
+            }
+        }
+}
